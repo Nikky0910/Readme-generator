@@ -8,37 +8,37 @@ const questions = [
     {
         type: 'input',
         message: 'What is your GITHUB username?',
-        name: 'questions',
+        name: 'github'
     },
     {
         type: 'input',
         message: 'What is your email address?',
-        name: 'questions',
+        name: 'email'
     },
     {
         type: 'input',
-        message: 'What is your projects title',
-        name: 'title',
+        message: 'What is your projects title?',
+        name: 'title'
     },
     {
         type: 'input',
         message: 'Please write a short description of your project',
-        name: 'description',
+        name: 'description'
     },
     {
         type: 'input',
         message: 'What command should be run to install dependencies?',
-        name: 'installation',
+        name: 'installation'
     },
     {
         type: 'input',
         message: 'What does the user need to know about using this repo?',
-        name: 'usage',
+        name: 'usage'
     },
     {
         type: 'input',
         message: 'What command should be run to run tests?',
-        name: 'test',
+        name: 'test'
     },
     {
         type: 'list',
@@ -52,7 +52,9 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     const content = generateMarkdown(data);
-    fs.writeFile(fileName, content, (err)=> err ? console.error(err) : console.log('Success!'));
+    fs.writeFile(fileName, content, (err)=> {
+        err ? console.error(err) : console.log('Success!')
+});
 }
 
 // TODO: Create a function to initialize app
