@@ -16,7 +16,10 @@ To install the necessary dependencies for the application, please write 'npm i' 
 
 ## Usage
 
-Please refer to the following video on how to use the application:
+Please refer to the following video on how to use the application: 
+
+<a href = "https://drive.google.com/file/d/1NLlk2vz4B3eq549nMskXXrElWJMKYJ4X/view"> Click here to watch the video</a>
+
 
 ## License
 
